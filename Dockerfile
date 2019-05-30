@@ -12,6 +12,9 @@ RUN apk --update --no-cache add \
     less \
     mailcap \
     bash \
+    gcc \
+    python-dev \
+    musl-dev \
     && pip install --no-cache-dir awscli==1.16.18 aws-sam-cli==0.16.1 \
     && apk del py-pip \
     && rm -rf /var/cache/apk/* /root/.cache/pip/*
